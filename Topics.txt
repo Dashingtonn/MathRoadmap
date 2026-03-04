@@ -1,0 +1,144 @@
+Arithmetic
+	Basic Arithmetic Operations
+	Exponentiation
+	Rules for arithmetic Operations
+		Divisibility Rules
+	Calculating with Fractions
+	Numeral Systems
+		Divisibility rules 3 and 9.
+	Sets of numbers
+	The number Line
+	Properties of Numbers
+		Prime numbers
+		Greatest common divisor GCD
+		Least common multiple LCM
+		Euclidean algorithm
+	Fundamental Theorem of Arithmetic
+	Notes on arithmetic
+		Absolute value
+		Rounding
+		Percent
+Basic Geometry
+	Cartesian Coordinate System
+		Points
+		Lines & Types of lines (line, ray, segment)
+	Area and perimeter
+ 		
+	Working with Units
+		SI-System
+		Scientific Notation
+	Geometry of Circles
+		Area
+		Circumference
+		Fractions of a circle
+		Area of a sector
+		Types of lines in circles
+			Secant
+			Tangent
+			Chord
+			Diameter & radius
+	Angles and Radians
+		Degrees, Minutes, Seconds
+		Radians
+		Types of angles
+		Finding angles in triangles
+		Coterminal Angles
+	Geometry of Triangles
+		Area
+		Pythagorean Theorem
+		Diagonals
+		Similarity of triangles
+			Ratio & Proportion
+	3D Geometry
+		Volume
+		Surface Area
+		Prisms
+		Sphere
+		Pyramid
+		Cylinder
+		Cone
+	Polygons & Composite Figures
+		Types of polygons
+		Types of quadrilaterals
+	Coordinate Geometry
+		Distance formula
+	Notes on Geometry
+Algebra
+	Set builder notation
+	Variables & Expressions
+		Comes from Arabic "al-jibr" meaning "restoration" or "the reunion of broken parts"
+	Linear equations
+	Word problems
+	Addition & Subtraction and Multiplication & Division are the same
+		Rewrite algebraic properties
+	Manipulating Equations/Formulae
+		A little bit of physics
+	Introduction to functions
+		Vertical line test
+	Linear Functions
+		Slope
+		Point-slope form
+	Graphing Equations & Inequalities
+	Systems of Equations
+	Inequalities & Systems of Inequalities
+	Factoring Methods
+	Quadratic functions
+		Quadratic equation
+	Complex Numbers
+		Complex roots
+		Significance of math with coordinates
+		Rotation
+	Polynomials
+		Degree
+		Nomial, Binomial, Trinomial, 
+		Root finding via systems of equations (tedious)
+		Funfacts: Cubic and quartic formula
+	Polynomial long division
+	Eulers number
+	Logarithms & Logarithmic Functions
+	Rational Expressions & Functions
+	Types of functions
+	Nonlinear Equations
+	Graphs, Range & Domain
+		Function transformations
+	Inverse Functions
+	Function composition
+	Piecewise functions
+		Absolute value function
+	Even and odd functions
+	Sigma notation
+	Introduction to proof writing
+		Direct proof
+		Contrapositive
+		Contradiction
+		Cases
+		Induction
+	Notes on Algebra
+		Averages
+		Basic Probability
+		Binomial Theorem & Pascal's Triangle
+		Permutations & Combinations
+		Floor & Ceil function
+Trigonometry
+	Trigonometric Functions & Definitions
+	Solving Right triangles
+	Some Trigonometric Identities
+		Reciprocal idents
+		Pythagorean identities
+	The Unit Circle Definition
+	Graphs of Trig Functions
+	Some more Trig Identities
+		negative angle
+		+ pi/2, -pi/2 yada yada
+	All Trigonometric identities
+	Inverse Trigonometric Functions
+	Solving Trigonometric Equations
+	Law of Sines
+	Law of Cosines
+	Polar Coordinates
+	De Moivre's Theorem
+Calculus
+	Limits
+	Derivatives
+	Integrals
+	
