@@ -14,8 +14,8 @@ Arithmetic
 		Least common multiple LCM
 		Euclidean algorithm
 	Fundamental Theorem of Arithmetic
+	Modular Arithmetic
 	Notes on arithmetic
-		Absolute value
 		Rounding
 		Percent
 Basic Geometry
@@ -79,8 +79,7 @@ Algebra
 		Slope
 		Point-slope form
 	Graphing Equations & Inequalities
-	Systems of Equations
-	Inequalities & Systems of Inequalities
+	Systems of Equations & Inequalities
 	Factoring Methods
 	Quadratic functions
 		Quadratic equation
@@ -135,6 +134,7 @@ Trigonometry
 	Solving Trigonometric Equations
 	Law of Sines
 	Law of Cosines
+	Solving General Triangles
 	Polar Coordinates
 	De Moivre's Theorem
 Calculus

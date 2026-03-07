@@ -70,6 +70,9 @@ legend {
     background-color: rgb(60, 60, 60);
     float: right;
 }
+.wide {
+    width: 35%;
+}
 .box img {
     width: 100%;
     height: auto;

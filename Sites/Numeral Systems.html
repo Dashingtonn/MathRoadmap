@@ -21,24 +21,103 @@
     Numeral Systems
 </h1><hr>
 <p>
-    A Numeral System is the way that numbers are written down using symbols. I will explain via examples.
+    A Numeral System is the way that numbers are written down and counted using symbols. I will explain via examples.
 </p>
-<hr>
-<h2>
+<hr><h2>
     Decimal System
 </h2>
 <p>
     The system we use is called the Decimal system, where every digit represents a power of 10 (deci meaning ten). Let's consider the number 1234 for example.
     The ones digits represents \(10^0\), so in our case \(4\cdot 10^0 = 4\). Next digit \(3 \cdot 10^1\), next: \(2\cdot 10^2, 1\cdot 10^3\).
-    By this system every number can be represented as a sum of powers of tens. <br>
+    By this system every number can be represented as a sum of powers of tens.
     Example: Write 78253 as a sum of powers of tens. <br>
     Solution: \(7 \cdot 10^4 + 8\cdot 10^3 + 2 \cdot 10^2 + 5 \cdot 10^1 + 3\cdot 10^0\)<br><br>
     Now that you understand the decimal system, let us discuss how number systems work generally.
-    The decimal system is a number system with <span style="color:red"><u>base</u></span> 10. The base of a number system determines the base of every power that a digit represents.
-    
-
+    The decimal system is a number system with <span style="color:red"><u>base</u></span>-10. The base of a number system determines the base of every power that a digit represents.
+    Unless it is obvious from the context, we always write the base of the number system we're working with as a subscript.
+    For example, when working with decimal we'd write the last number as \(78253_{10}\).<br>
+    Another consequence of the base of a number system is that it is also the amount of symbols that are able to be used.
+    For example, with our decimal base-10 number system
+    we only have 10 different symbols for numbers, that is "0, 1, 2, 3, 4, 5, 6, 7, 8, 9".
+    Let's examine a few more number systems with this definition.
+</p><hr>
+<h2>Common Number Systems</h2>
+<p>
+    Computers, for example, do not work with the decimal system, instead they do computations using the binary system. The binary system, bi meaning two, is a base-2 number system.
+    Since it's base-2, every digit represents a power of two, and there are only two symbols to represent numbers, that is 0 and 1. Let's take a look at an example number: <br>
+    \(10011010_2\). This isn't necessary in mathematics, but in computer science we usually write binary numbers with 8 digits/as blocks of 8
+    since that represents one byte. Every digit from right to left represents a power of 2, with the exponent
+    starting from 0 and ending at 7, therefore, this number, in decimal, is: <br>
+    \(1 \cdot 2^7 + 0 \cdot 2^6 + 0 \cdot 2^5 + 1 \cdot 2^4 + 1 \cdot 2^3 + 0 \cdot 2^2 + 1\cdot 2^2 + 0 \cdot 2^0 = 2^7 + 2^4 + 2^3 + 2^2 = 128 + 16 + 8 + 2 = 164_{10}.\)<br>
+    Another number system that is used in computing is hexadecimal. Hexadecimal, decimal meaning ten and hexa meaning 6, is a base-16 number system, thus
+    every digit represents a power of 16 and there are 16 different symbols to use. Since we don't have 16 different digit symbols, after 9 we work with letters to
+    represent numbers, from A to F. So the symbols used to represent digits in hexadecimal are: "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F".
+    Where the letters represent the numbers from 10 to 15.<br>
+    Example: What number is \(1DA_{16}\) in decimal?<br>
+    Every digit represents a power of sixteen and A represents 10, D represents 13, so:
+    \(10 \cdot 16^0 + 13 \cdot 16^1 + 1\cdot 16^2 = 10 + 208 + 256 = 474\).
+    You can have a numeral system with any integer base.
+</p> <hr>
+<h2>Converting between numeral systems</h2>
+<p>
+    You can convert from decimal to any other system quite easily via division.
+    I'll explain via example: Let's find the binary representation of the decimal number 27. <br>
+    We will start by dividing our decimal number by two and recording the remainder. 27 / 2 = 13, R = 1.
+    Next continue by dividing the quotient by 2 again. 13 / 2 = 6, R=1. Continue this process until your quotient is zero.
+    6/2 = 3, R= 0. 3/2 = 1, R=1. 1/2 = 0, R = 1. Now notice, that at the first step we divided by two, so the
+    remainder there represents the digit corresponding to 2^0. At the second step we divided by 2 twice, whose
+    remainder represents the digit corresponding to 2^1. We continue this process and write down each digit with its
+    corresponding power of 2. At the end we should end up with this: \(27_{10} = 11011_2\). We can check our
+    result by converting back into decimal as we did previously. So: \(1 + 2 + 0 + 8 + 16 = 27\). <br>
+    Generally, the way to get any base representation of a number from decimal is to divide by the base and
+    record the remainder each time and then to match it up with the corresponding power of the base. You can also double-
+    check by simply converting the number back into decimal.
+    Example: Convert \(726_8\) into base 13.
+    There's usually no way to directly convert from one base into another, so you must first convert it into decimal
+    and then into the base you want. In our case: \(6 + 2\cdot 8 + 6\cdot 64 = 6 + 16 + 384 = 306_{10}\). Now convert
+    this decimal value into base 13, so: 306 / 13 = 23, R = 7, 23 / 13 = 1, R = 10 = A, 1/13 = 0, R = 1. <br>
+    Therefore, \(726_8 = 306_{10} = 1A7_{13}\). Check our result: \( 1A7_{13} = 7 + 10\cdot 13 + 10 \cdot 13^2 =
+    7 + 130 + 169 = 306\).
 </p>
+<hr>
+<h1>Proving the divisibility rules for 3 and 9</h1>
+<p>
+    The proof for these rules require the knowledge of how the decimal system works.
+    Just to refresh: A number is divisible by 3 if its cross sum is divisible by 3 and a number is divisible by 9 if its cross sum is divisible by 9. <br>
+    We know that any number can be written as a sum of powers of 10, so let's examine the simple number 111 for example. It can be written as
+    100 + 10 + 1, however it can be rewritten as (99 + 9 + 0) + (1 + 1 + 1), and notice that 99 as well as 9 is always going to be divisible by 3, so the only thing
+    that matters is that the cross sum, the thing the put on the right, is divisible by 3. As it happens, the cross sum is equal to 3, which is divisible by 3, so the number
+    111 is divisible by 3. Let's cover another example: 826531. We can write this as: <br>
+    \( 8 \cdot 10^5 + 2 \cdot 10^4 + 6\cdot 10^3 + 5\cdot 10^2 + 3\cdot 10 + 1 \ = 8\cdot 100000 + 2\cdot 10000 + 6\cdot 1000 + 5\cdot 100 + 3\cdot 10 + 1\), and note that
+    every power of ten can be written as a sequence of 9's plus 1, so for example 10 = 9 + 1, 100 = 99 + 1, 1000 = 999 + 1, and so on. Also note that all sequences of 9's
+    are divisible by 3, and any multiple of that is also divisible by 3. So let's rewrite our number as such: <br>
+     \( 8 \cdot (99999 + 1) + 2 \cdot (9999 + 1) + 6 \cdot (999 + 1) + 5 \cdot (99 + 1) + 3\cdot (9 + 1) + 1\). We know how to solve this using the distributive property.
+    Notice that everything multiplied with a sequence of 9's is divisible by 3 so it can be disregarded,
+    which only leaves everything that's multiplied by a 1, which represents the cross sum of the original number we started with, which is: 8 + 2 + 6 + 5 + 3 + 1. Therefore,
+    all that matters is that the cross sum of a number is divisible by 3 (In our case our number is divisible by 3 because its cross sum is equal to 25). <br>
+    Notice the general pattern. Every number can be written in terms of a sum of sequences of 9s, which are all divisible by 3, and what is left over is the cross sum
+    of the original number. Furthermore, notice that all these sequences of 9 are also divisible by 9, by the same logic a number is divisible by 9 if its crossum is divisible by 9.
+</p>
+<hr>
+<h1>Exercises</h1>
+<div class="latex">
+    \(
+    \begin{array}{l}
 
+    \end{array}
+    \)
+</div>
+<h1>Answers</h1>
+<button id="button1" style="background-color: rgb(40, 40, 40)"><p id="button1content">Click to reveal answers</p></button>
+<div class="container">
+    <div class="revealbox" id="answerbutton1"></div><p>
+    \(
+    \begin{array}{l}
+
+    \end{array}
+    \)
+</p>
+</div>
 <script src="AnswerButton.js"></script>
 </body>
 </html>

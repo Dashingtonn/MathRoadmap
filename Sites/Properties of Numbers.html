@@ -20,7 +20,76 @@
 <!--- CODE GOES HERE --->
 
 <p>
-
+    Here we will discuss some properties of numbers, such as odd and even numbers. These numbers are special because, in the case of even numbers, they are divisible by two, and in
+    the case of odd numbers, they aren't divisible by two.
+</p><hr>
+<h1>Prime Numbers</h1>
+<div class="box">
+    <img style="float:right" src="../Images/100%20primes.png" loading="lazy" alt="Primes below 100">
+    <p style="text-align: center;">
+        All the prime numbers below 100 marked in gray.
+    </p>
+</div>
+<p>
+    Prime numbers are defined as numbers which are only divisible by themselves and 1. A list of the prime numbers below 100 is given on the right hand side of the page.
+    If you look through this list you will notice that, except for the number two, all prime numbers are odd, which should make sense. Primes are very special because all non-prime
+    numbers, called composite numbers, can be expressed as a product of primes (thus their name).
+</p>
+<h2>Prime factorization</h2>
+<p>
+    But how do we find out the primes which make up a composite number? The answer is prime factorization, which is the process how we can do that. I'll explain via example. <br>
+    Let's find the prime factorization of 66 for example. We know that 66 is not prime because it is even, so it must have a prime factorization. We can find this prime factorization
+    by dividing by the prime numbers, starting from the smallest prime. We can also make this look nicer by noting this division process with a vertical bar and the quotients/dividends on the
+    left side of it with the divisors on the right hand side. We start off by simply writing the prime number left of the bar.
+    \begin{array}{c|c}
+    66 &\\
+    \\
+    \\
+    \\
+    \end{array}
+    Now we want to find the smallest prime number that divides 66. In this case 66 is divisible by 2 so we write that right of 66 on the other side of the line and the quotient of those
+    two numbers below the 66. Now our prime factorization should look like this.
+    \begin{array}{c|c}
+    66 & 2\\
+    33 \\
+    \\
+    \\
+    \end{array}
+    We continue this process until we arrive at 1. It is suggested to learn at least the first 5-10 prime numbers so this process becomes easier.
+    \begin{array}{c|c}
+    66 & 2\\
+    33 & 3\\
+    11 & 11\\
+    1\\
+    \end{array}
+    Now we have found out that the prime factorization of \(66 = 2\cdot 3\cdot 11\). Via this process we can find the prime factorization of any number, unless the number is prime itself,
+    in which case the prime factorization is just the number itself.<br>
+    Example: Find the prime factorization of 273. <br>
+    Solution: 273 is odd so it's not divisible by 2. The cross sum of 273 is 12 which is divisible by 3, so we know that 273 is divisible by 3, which gives us 91, so:
+    \begin{array}{c|c}
+    273 & 3\\
+    91 & 7 \\
+    13 & 13 \\
+    1
+    \end{array}
+    Therefore the prime factorization of 273 is \(3\cdot 7\cdot 13\).
+</p>
+<h2>Greatest common divisor (GCD) and least common multiple (LCM)</h2>
+<p>
+    The greatest common divisor of two numbers is the largest number that divides both of those numbers. This is useful when, for example, simplifying fractions, since
+    you want to find the largest number which divides both numerator and denominator so you can simplify them.<br>
+    The greatest common divisor, short GCD, can be found by finding which numbers in the prime factorizations of the two numbers match up. For example, let's find the GCD of 78 and 60. <br>
+    We start by writing the prime factorization for both numbers.
+    \begin{array}{c|c}
+    78 & 2 \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:60 & 2\\
+    39 & 3 \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:30 & 3\\
+    13 & 13 \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:10 & 2\\
+    1 & \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:5 & 5 \\
+    & \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:1
+    \end{array}
+    Now we want to find which numbers have same numbers for prime factorizations. We notice that they both contain a two and a three in their prime factorization, so that is the
+    GCD of 78 and 60, that is: \( GCD(78, 60) = 2\cdot 3 = 6\). The least common multiple, short LCM, is simply all the numbers that aren't in the GCD, so every number except for 2 and 3.
+    \(LCM(78, 60) = 2\cdot 2\cdot 3\cdot 5\cdot 13 = 780\).
 </p>
 
 
