@@ -42,6 +42,12 @@
     Let's examine a few more number systems with this definition.
 </p><hr>
 <h2>Common Number Systems</h2>
+<div class="box">
+    <img style="float:right" src="../Images/binary_number_system_.png" loading="lazy" alt="Binary table">
+    <p style="text-align: center;">
+        Computers use binary for computations, as they are built out of on- and off switches representing 1s and 0s.
+    </p>
+</div>
 <p>
     Computers, for example, do not work with the decimal system, instead they do computations using the binary system. The binary system, bi meaning two, is a base-2 number system.
     Since it's base-2, every digit represents a power of two, and there are only two symbols to represent numbers, that is 0 and 1. Let's take a look at an example number: <br>
@@ -61,7 +67,7 @@
 <h2>Converting between numeral systems</h2>
 <p>
     You can convert from decimal to any other system quite easily via division.
-    I'll explain via example: Let's find the binary representation of the decimal number 27. <br>
+    I'll explain using an example: Let's find the binary representation of the decimal number 27. <br>
     We will start by dividing our decimal number by two and recording the remainder. 27 / 2 = 13, R = 1.
     Next continue by dividing the quotient by 2 again. 13 / 2 = 6, R=1. Continue this process until your quotient is zero.
     6/2 = 3, R= 0. 3/2 = 1, R=1. 1/2 = 0, R = 1. Now notice, that at the first step we divided by two, so the
@@ -70,8 +76,7 @@
     corresponding power of 2. At the end we should end up with this: \(27_{10} = 11011_2\). We can check our
     result by converting back into decimal as we did previously. So: \(1 + 2 + 0 + 8 + 16 = 27\). <br>
     Generally, the way to get any base representation of a number from decimal is to divide by the base and
-    record the remainder each time and then to match it up with the corresponding power of the base. You can also double-
-    check by simply converting the number back into decimal.
+    record the remainder each time and then to match it up with the corresponding power of the base. You can also double-check by simply converting the number back into decimal.
     Example: Convert \(726_8\) into base 13.
     There's usually no way to directly convert from one base into another, so you must first convert it into decimal
     and then into the base you want. In our case: \(6 + 2\cdot 8 + 6\cdot 64 = 6 + 16 + 384 = 306_{10}\). Now convert
@@ -103,8 +108,15 @@
 <div class="latex">
     \(
     \begin{array}{l}
-
+    1.) 720_{10} \to Base \:\: 3  & 6.) 5413_7 \to Base \:\: 10 & 11.) 406175 \to Base \:\: 6\\
+    2.) 170_{10} \to Base \:\: 2  & 7.) BBB_{12} \to Base \:\: 3 & 12.) ACDC_{14} \to Base \:\: 16\\
+    3.) 1111_{10} \to Base \:\: 7 & 8.) FAA_{16} \to Base \:\: 11 & 13.) 243005_7 \to Base \:\: 16\\
+    4.) 3039_{16} \to Base \:\: 10 & 9.) 123321_4 \to Base \:\: 5 \\
+    5.) 3620_7 \to Base \:\: 10 & 10.) 1234567_8 \to Base \:\: 9 \\
     \end{array}
+    \\
+    14.) \text{What is the largest number you can write in base 6 using 6 digits? (Answer in base 6 and 10)}\\
+    15.) \text{What is the largest number you can write in Base 16 using 3 digits/symbols? (Answer in base 10 and 8)}
     \)
 </div>
 <h1>Answers</h1>
@@ -113,8 +125,14 @@
     <div class="revealbox" id="answerbutton1"></div><p>
     \(
     \begin{array}{l}
-
+    1.) 1000001_3  & 6.) 1921_{10} & 11.) 5054235_6\\
+    2.) 10101010_2 & 7.) 2100222_3 & 12.) 7522_{16}\\
+    3.) 3145_7 & 8.) 3016_{11} & 13.) ACDC_{16}\\
+    4.) 12345_{10} & 9.) 24120_5 & 14.) 555555_6 \to 46655_{10}\\
+    5.) 1337_{10} & 10.) 571604_9 & 15.) 4095_{10} \to 7777_8\\
     \end{array}
+    \\
+
     \)
 </p>
 </div>

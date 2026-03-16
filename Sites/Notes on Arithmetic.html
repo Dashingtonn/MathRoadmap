@@ -18,11 +18,113 @@
 </ul>
 <h1>Notes on Arithmetic</h1><hr>
 <!--- CODE GOES HERE --->
-
 <p>
-
+    Lastly just some finishing touches to really give you everything you should know coming out of
+    arithmetic and into further fields of mathematics. Here we will lastly focus on two things, that
+    are percent and rounding. Rounding is quite simple and should've been covered earlier however I
+    think that there is no place for it to neatly fit in. Same with percentage.
 </p>
-
-
+<hr>
+<h2>Rounding</h2>
+<p>
+    When doing calculations we are sometimes left with a decimal that is way too long to write down so
+    we must cut it off at some point which will lose us information and accuracy however make the
+    number more readable. When one rounds one should always use an approximately equal symbol (\(\approx\))
+    when one goes from a calculation/accurate representation of a number to a rounded one.
+    With rounding you cut off information, so for example if you wanted someone to get a feeling for how
+    large irrational numbers are, you'd have to round them since you can't provide them with the entire number
+    (they are infinite after all). Let's say we want to round \(\sqrt{2}\) to the nearest 5th decimal.
+    First let us write down 7 digits of \(\sqrt{2}\), making sure not to round at all but instead simply
+    cut off the digits after, called truncation. So \(\sqrt{2} \approx 1.414213\).
+    The rules for rounding are that from 0 to 4 you round down and from 5 to 9 you round up.
+    In this case, if we want to round to the 5th decimal place, we would need to look at the decimal
+    before it, which is 3, and since it is 3 we round down, so, rounded, \(\sqrt{2} \approx 1.41421\)
+    Let's look at an example of rounding up. <br>
+    Round \(\sqrt{3}\) to the 6th decimal place. First we write the number with 7 digits after the
+    decimal point: \(\sqrt{3} \approx 1.7320508\). We want to round to the 6th decimal so we look at the
+    7th and see that it is an 8, so we round up. So \(\sqrt{3} \approx 1.732051\).
+</p>
+<hr>
+<h2>Percentage</h2>
+<p>
+    Percentage can be a bit of an abstract concept if you don't truly understand it. As a side note
+    for mathematics as a whole: If you understand something you will also be able to apply and use it
+    better. Same with percentage, which a lot of people struggle with. Math is not about memorizing
+    formulae and computing things (ironic for me to say in the arithmetics chapter). The ideas
+    in maths will continue getting more and more complex and abstract, so it is crucial to have an
+    understanding of them and a way to relate them to things that are not abstract and make sense
+    very intuitively. <br>
+    Let's say you have a box of 20 apples. Percentage represents a part of something, a segment of something,
+    with 100% being the entire thing and 0% being no part of it. For example, if we now eat half of
+    the apples in the box we will be left with 10 apples. Since we started with 100% of the apples
+    and now ate half of them it is equivalent to dividing by two. So, for 100% = 20 apples, \(100%\div 2\) = 50% = 10 apples.
+    Let's say we want any percentage of a number, then we will get 1% of that number and then multiply it with any percent we want.
+    For example, say we want to get 274% of a number, then we will first find 1% of the number and then multiply 1% with 274 to get 274%.
+    And notice that getting from 100% to 274% is equivalent to multiplying with 2.74, and this works generally, that is, any percentage can be represented as either a percentage (%), or
+    as a decimal. It is sort of hard to explain these things generally, but mostly solving percentage problems boils down to realising whether or not you have the whole amount (100%)
+    or some other percentage of it (80% for example) and then working with that. <br>
+    Lastly, let me mention compounding interest. This is a topic that will come up once more in the
+    future. Let's say you put one dollar in a bank which gives you 50% interest twice a year. So we'd calculate that by starting with our 1 dollar, multiplying it with 1.5
+    since that is 150% (50% interest), and then multiplying the outcome of that with 1.5 again, mathematically: \(1 \cdot 1.5 \cdot 1.5\) or \( 1\cdot 1.5^2 = 2.25\), so after a year
+    we'd have 2.25 bucks. <br>
+    Another example: We have 40000 euros saved in our bank account and our bank has an annual interest rate of 3.4%. How much will we have in our bank account after 20 years? <br>
+    Solution: Every year our balance increases by 3.4%, so is multiplied by 1.034, and since we wait for 20 years it will be multiplied by 1.034 20 times, so our balance
+    after 20 years will be \(40000 \cdot 1.034^{20} = 40000 \cdot 1.9516897... \approx 40000 \cdot 1.952 = 78080\). Now, let us go over a few examples so you can get an intuitive
+    understanding of how to work with percentages. <br>
+</p>
+<hr><h2>Examples</h2>
+<p>
+    Example 1: What percent of 264 is 99? <br>
+    Solution: Since 264 is 100%, we want to find which percentage of it is 99. We do this by dividing 99 by 1% of 264, which tells us how many percent of 264 the number 99 is.
+    Try to make sense of this intuitively, why dividing 99 by 1% gives you the percentage. Dividing generally tells you how often something fits into another thing, so
+    now we're asking how often 99 fits into 1%, which will give us the percentage that 99 has with respect to 100%, that is 264. 1% of 264 is 2.64, so \(\frac{99}{2.64} = 37.5\).
+    Therefore, 99 is 37.5% of 264. We can double-check this by multiplying 264 with 0.375 to see that it is actually 37.5% of it. \(264 \cdot 0.375 = 99\).<br><br>
+    Example 2: A class of 240 students has 117 female students. What percent of the class is male? <br>
+    Solution: 240 is 100%, and we know that there are 117 female students. We assume the rest to be male (obviously), and from here on there are two ways to calculate which percentage
+    of the class is male. Method 1: We figure out how many male students there are and then find the percentage of that with respect to 100%. Since there are 240 students in total
+    and 117 female students than there are 240 - 117 = 123 male students. Then we divide 123 by 1% of 240, which is 2.4, so \(\frac{123}{2.4} = 51.25%\). Double-check:
+    \(240 \cdot 0.5125 = 123\). Method 2: We figure out which percentage of the students are female and then subtract that from 100%. We do this the same way again, that is
+    by dividing 117 by 1% which is 2.4, so \(\frac{117}{2.4} = 48.75%\), meaning that 48.75% of the students are female so the rest must be male, so 100% - 48.75% = 51.25%.<br><br>
+    Example 3: A 350mL beaker is filled with a 12.8% acid solution, how many mL are acid? <br>
+    Solution: 350mL is 100%, and we want to find what 12.8% of 350 is. Simple enough: \(350 \cdot 0.128 = 44.8\). So 44.8mL of the solution are acid.<br><br>
+    Example 4: The price of a bicycle after a 25% discount is $679.99. What was the original price? Round to the nearest cent. <br>
+    Solution: In this case we don't know 100%, since we don't know the original price, we only know the price after a 25% discount, and because of that we know 75%. Our goal
+    is to find 100%, the original price. In this case, we have 75%, so 0.75 of the original price. We can find the original price by getting back to 100%, and to get from 0.75 to 1
+    we simply divide by 0.75, so 100% = \(\frac{679.99}{0.75} \approx 906.65\), so the original price of the bicycle is $906.65.<br><br>
+    Example 5: You put 20 Euros in a bank account and get 0.4% interest every week, how much money will you have after two years? (1 year contains 52 weeks) <br>
+    Solution: We start with 20 euros and every week we multiply with 1.004. Since there are 52 weeks in a year, and we wait for two years (2 * 52 = 104), our resulting balance
+    after two years will be \(20 \cdot 1.004^{104} \approx 20 \cdot 1.515 = 30.3\).<br>
+</p>
+<hr>
+<h1>Exercises</h1>
+<div class="latex">
+    1.) Round to the 5th decimal: 3.14159265        <br>
+    2.) Round to the 3rd decimal: 1.2436485        <br>
+    3.) Round to the 4th decimal: 5.5555455          <br>
+    4.) Round to the 1st decimal: 0.999999          <br>
+    5.) Round to the 10th decimal: 9.9999999999999   <br>
+    6.) A jacket with original price of 120€ is discounted by 20% and a sales tax of 15% is added. What is the final price?<br>
+    7.) A student scores 75% on a test. If 10 more correct answers would have raised the score to 80%, how many questions were on the test?<br>
+    8.) A population of 10,000 grows by 5% annually. If the population decreases by 5% the following year, what is the net change in population after these two years? <br>
+    9.) A company increases the price of its product by 25% and then offers a 20% discount. Is the final price higher or lower than the original, and by what percentage?<br>
+    10.) A number is decreased by 30% and then increased by 30%. Is the final number equal to, greater than, or less than the original number? Calculate the exact percentage difference.
+</div>
+<h1>Answers</h1>
+<button id="button1" style="background-color: rgb(40, 40, 40)"><p id="button1content">Click to reveal answers</p></button>
+<div class="container">
+    <div class="revealbox" id="answerbutton1"></div><p>
+    1.) 3.14159 <br>
+    2.) 1.244 <br>
+    3.) 5.5555 <br>
+    4.) 1 <br>
+    5.) 10 <br>
+    6.) \(120€ \cdot 0.8 \cdot 1.15 = 110.4€\) <br>
+    7.) 10 = 5% \(\to\) 100% = 200 <br>
+    8.) \(10000 \cdot 1.05 \cdot 0.95 = 9975 \to \) Change in population is 25. <br>
+    9.) Let's just give the product an arbitrary price like 1. So \(1 \cdot 1.25 \cdot 0.8 = 1\). Therefore, the price remains unchanged. <br>
+    10.) Let's pick an arbitrary number like 1. \(1 \cdot 1.3 \cdot 0.7 = 0.91\). So the final number is less than the original number by 9%.
+</p>
+</div>
+<script src="AnswerButton.js"></script>
 </body>
 </html>

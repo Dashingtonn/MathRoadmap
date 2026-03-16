@@ -18,11 +18,47 @@
 </ul>
 <h1>Fundamental Theorem of Arithmetic</h1><hr>
 <!--- CODE GOES HERE --->
-
 <p>
-
+    There are many fields of mathematics you will get to know in the future, and some of these have
+    what are called fundamental theorems, which are very important to the study of these subjects, note that these won't be important to you directly right now, however I think
+    knowing these as little fun facts is fun.
+    Here we will discuss and prove the fundamental theorem of arithmetic which states that
+    every integer greater than 1 has a prime factorization which is unique, meaning that every number has only one
+    prime factorization and every prime factorization corresponds to only one number. In other words, no number has more
+    than one prime factorization. <br>
+    If you really couldn't care less, you will not be disadvantaged, or affected at all really, if you skip this chapter. For the curious among you, enjoy this very neat and concise proof of
+    something quite interesting.
 </p>
-
-
+<hr>
+<h1>Proof</h1>
+<h2>Proof of existence</h2>
+<p>
+    First we have to prove that every positive integer has a prime factorization. We will do this with proof by contradiction, which means that we will assume something and deduce
+    things from that, and if this leads to a contradiction then our original assumption must have been false. <br>
+    So, we will assume that not every number can be written as a prime factorization, so there will be some smallest number which doesn't have a prime factorization. Furthermore,
+    this number has to be either prime or composite, where composite doesn't necessarily mean that it has a prime factorization but rather that it can be expressed as a product of
+    numbers. Since we are only considering non-primes, the smallest number that can't be expressed with a prime factorization can be expressed as a product of numbers. But
+    since this number is the smallest one of these numbers, the factors which make it up will be smaller than the number and will have prime factorizations. And since the factors
+    have prime factorizations, they can be expressed as such and therefore, what we assumed was the smallest number that can't be expressed as a prime factorization, can be
+    expressed as a product of primes, therefore it has a prime factorization. <br>
+    If you think about it, now the smallest one of those numbers does have a prime factorization, so the smallest
+    number which can't be expressed as a product of primes will move to the next number which has that property, however, using the same argument we just went over, we can prove that
+    this number also has a prime factorization. We can continue this process up to infinity, therefore every postive integer has a prime factorization.
+</p>
+<h2>Proof of uniqueness</h2>
+<p>
+    Next we will prove that the prime factorization is unique, meaning that every number only has one prime factorization and it is special.
+    Once again we will do this using proof by contradiction,
+    so we assume that not every prime factorization is unique, meaning that there is some number that has at least two prime factorizations.
+    Let's once again investigate the smallest one of these numbers, that is the smallest number which has two prime factorizations.
+    Now, since these two prime factorizations multiply to the same number, they are equivalent, obviously. If we look at one of these prime factorizations, and pick some prime
+    then we know that this prime divides the prime factorization for sure, because it divides itself. Furthermore, since the second prime factorization is equal to the first,
+    this prime we picked out must also divide one of the primes in the second prime factorization, meaning that at least one prime, the same prime, is contained in both factorizations.
+    We can "cancel" out this prime, as you would simplify a fraction by dividing by the same thing, we can simplify both of these factorizations by diving both of them by the same prime.
+    Now we have two prime factorizations which are smaller than the original number which we assumed was the smallest such number which has two prime factorizations. But since these
+    two are equal to each other it means that there is another smaller number that has two prime factorizations, however that goes against our assumption so our assumption must've been
+    incorrect. Therefore, every prime factorization is unique.<br><br>
+    So, we have proven that every positive integer has a prime factorization and that this prime factorization is unique, which is the fundamental theorem of arithmetic.
+</p>
 </body>
 </html>

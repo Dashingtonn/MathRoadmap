@@ -5,7 +5,7 @@ Arithmetic
 		Divisibility Rules
 	Calculating with Fractions
 	Numeral Systems
-		Divisibility rules 3 and 9.
+		Divisibility rules 3 and 9
 	Sets of numbers
 	The number Line
 	Properties of Numbers

@@ -18,7 +18,6 @@
 </ul>
 <h1>Properties of Numbers</h1><hr>
 <!--- CODE GOES HERE --->
-
 <p>
     Here we will discuss some properties of numbers, such as odd and even numbers. These numbers are special because, in the case of even numbers, they are divisible by two, and in
     the case of odd numbers, they aren't divisible by two.
@@ -27,7 +26,7 @@
 <div class="box">
     <img style="float:right" src="../Images/100%20primes.png" loading="lazy" alt="Primes below 100">
     <p style="text-align: center;">
-        All the prime numbers below 100 marked in gray.
+        All the prime numbers below 100 marked in grey.
     </p>
 </div>
 <p>
@@ -89,9 +88,63 @@
     \end{array}
     Now we want to find which numbers have same numbers for prime factorizations. We notice that they both contain a two and a three in their prime factorization, so that is the
     GCD of 78 and 60, that is: \( GCD(78, 60) = 2\cdot 3 = 6\). The least common multiple, short LCM, is simply all the numbers that aren't in the GCD, so every number except for 2 and 3.
-    \(LCM(78, 60) = 2\cdot 2\cdot 3\cdot 5\cdot 13 = 780\).
+    \(LCM(78, 60) = 2\cdot 2\cdot 3\cdot 5\cdot 13 = 780\). Also notice that the LCM is the same as the product of the two numbers except for the GCD, so we can compute the LCM easier
+    by simply computing the GCD beforehand, which is easier to remember (play memory and match the numbers), and then dividing the product of the two numbers by the GCD. In our case
+    that'd be \(\frac{78\cdot 60}{GCD(78, 60)} = \frac{78\cdot 60}{6} = \frac{78\cdot 10}{1} = 780\). <br>
+    Example: Find the GCD and LCM of 363 and 330. <br>
+    Solution: \begin{array}{c|c}
+    363 & 3 \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:330 & 2\\
+    121 & 11 \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:165 & 5\\
+    11 & 11 \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:33 & 3\\
+    1 & \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:11 & 11 \\
+    & \:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:1
+    \end{array}
+    \(GCD(363, 330) = 3\cdot 11 = 33. \:\:LCM(363, 330) = \frac{363 \cdot 330}{GCD(363, 330)} = \frac{363\cdot 330}{33} = \frac{363\cdot 10}{1} = 3630\)
+ </p>
+<h2>Euclidean Algorithm</h2>
+<p>
+    The Euclidean algorithm is a way to find the GCD of two numbers without prime factorization.
+    I will explain via example. Let us find the GCD of 64 and 12.<br>
+    We will first divide the larger number by the smaller and record the remainder, so 64 / 12 = 5,
+    Remainder: 4. Then take the divisor and divide it by the remainder. In this case that is:
+    12 / 4 = 3, Remainder 0. Once you have gotten to the remainder of 0 then the previous remainder/last
+    divisor is the greatest common denominator, which in our case is 4. You can check this answer is correct
+    by doing the prime factorization. As to the proof why this process works, that will be left up to the reader
+    (I don't know myself).<br>
+    Example: Compute the GCD of 868 and 248. <br>
+    Solution: 868 / 248 = 3, Remainder: 124. <br>
+    248 / 124 = 2, Remainder: 0. <br>
+    Therefore, GCD(868, 248) = 124.
 </p>
-
-
+<hr>
+<h1>Exercises</h1>
+<div class="latex">
+    \(
+    \text{Find the GCD and LCM of these numbers.} \\
+    \begin{array}{l}
+    1.) 108, 450\\
+    2.) 132, 175\\
+    3.) 198, 392\\
+    4.) 224, 315\\
+    5.) 245, 270\\
+    \end{array}
+    \)
+</div>
+<h1>Answers</h1>
+<button id="button1" style="background-color: rgb(40, 40, 40)"><p id="button1content">Click to reveal answers</p></button>
+<div class="container">
+    <div class="revealbox" id="answerbutton1"></div><p>
+    \(
+    \begin{array}{l}
+    1.) GCD(108, 450) = 18, LCM(108,450) = 2700\\
+    2.) GCD(132, 175) = 1, LCM(132, 175) = 23100\\
+    3.) GCD(198, 392) = 2, LCM(198, 392) = 38808\\
+    4.) GCD(224, 315) = 7, LCM(224, 315) = 10080\\
+    5.) GCD(245, 270) = 5, LCM(245, 270) = 13230\\
+    \end{array}
+    \)
+</p>
+</div>
+<script src="AnswerButton.js"></script>
 </body>
 </html>

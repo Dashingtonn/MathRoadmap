@@ -34,7 +34,9 @@
     A set doesn't have to be finite either, in fact the sets of numbers we will discuss in this chapter are all infinite. Let's introduce the first one: <br>
     \(\mathbb{Z}\) = {..., -3, -2, -1, 0, 1, 2, 3, ...} denotes the <span style="color:red"><u>integers</u></span>, that is all numbers that aren't decimals, both positive and negative.
     \(\mathbb{N}\) = {1, 2, 3, 4, 5, ...} denotes the <span style="color:red"><u>natural numbers</u></span>, which are just the positive integers, and mind you that zero is
-    not a part of the natural numbers. We can write this with zero include as either \(\mathbb{N}_0\) or \(\mathbb{W}\) = {0, 1, 2, 3, ...} which are called the
+    not a part of the natural numbers. We can write this with zero include as either \(\mathbb{N}_0\) or
+    \(\mathbb{Z}^+_0\), where the "+" denotes only the positive part of the integers and the zero in the subscript
+    denotes that zero is also a part of this set, or \(\mathbb{W}\) = {0, 1, 2, 3, ...} which are called the
     <span style="color:red"><u>whole numbers</u></span>. Notice that the whole numbers are larger than the natural numbers, by one number, that is 0, however
     smaller than the integers, which contain both the whole and natural numbers. Furthermore, we can describe almost every number using the
     <span style="color:red"><u>rational numbers</u></span>, denoted \(\mathbb{Q}\). The rational numbers describe every number that's a fraction, like
@@ -44,7 +46,42 @@
     are the <span style="color:red"><u>real numbers</u></span>, denoted \(\mathbb{R}\). This denotes every number that can be represented algebraically.
     Technically there is another set which contains this set in itself as well, however that is also beyond the scope of this, see end of set builder notation.<br>
     There are certain numbers called <span style="color:red"><u>irrational numbers</u></span>, which can't be described with a fraction, but can be described in terms of
-    mathematical operations, like \(\sqrt{2}\) for example. The proof for the irrationality of \(\sqrt{2}\) will come in a later chapter.
+    mathematical operations, like \(\sqrt{2}\) for example. The proof for the irrationality of \(\sqrt{2}\) will come in a later chapter. In general, the square root of any
+    positive number that isn't a perfect square, like \(\sqrt{2}, \sqrt{3}, \sqrt{5}, \sqrt{6}, \sqrt{7}, ...\) is irrational, while square roots of perfect squares such as
+    \(\sqrt{4}, \sqrt{9}, \sqrt{16}, ...\) are not irrational for (hopefully) obvious reasons.
 </p>
+<hr>
+<h1>Exercises</h1>
+<div class="latex">
+    \(
+    \text{1-10.) Find the smallest number set that these numbers are an element of, }\\\text{and (if they aren't a part of the real numbers) the next smallest number set they are an element of.}\\
+    \text{Example: } 0.) 1 \to \text{Solution: } 1\in \mathbb{N} \in \mathbb{W} \text{ (N is the smallest, W is the next smallest)}.\\
+    \text{For 11-15.) Find the smallest set the given set can be wholly contained by, as well as the smallest none of its elements can be contained by.}\\
+    \text{(If a set is equal to another set it is contained by it)}\\
+    \begin{array}{l}
+    1.) 4               & 6.) \frac{2}{2}           & 11.) A = \{1, 7, 25, 3333, 5\}\\
+    2.) -333            & 7.) -\frac{48}{6}         & 12.) B = \{17, -4, 15, -37, -44.4, -44, 44\}\\
+    3.) \frac{123}{724} & 8.) \sqrt{25}             & 13.) C = \{4, \sqrt{9}, \sqrt{2\cdot 8}, 18, 0\}\\
+    4.) 3.14159         & 9.) -\sqrt{4}             & 14.) D = \{\mathbb{N}, 0\}\\
+    5.) \sqrt{11}       & 10.) \sqrt{\frac{63}{7}}  & 15.) E = \{\mathbb{Q}, 1, -2, \frac{3}{4}, \sqrt{5}\} \\
+    \end{array}
+    \)
+</div>
+<h1>Answers</h1>
+<button id="button1" style="background-color: rgb(40, 40, 40)"><p id="button1content">Click to reveal answers</p></button>
+<div class="container">
+    <div class="revealbox" id="answerbutton1"></div><p>
+    \(
+    \begin{array}{l}
+    1.) 4 \in \mathbb{N} \in \mathbb{W}                 & 6.) \frac{2}{2} = 1 \in \mathbb{N} \in \mathbb{W}                     & 11.) A \in \mathbb{N} \in \mathbb{W}\\
+    2.) -333 \in \mathbb{Z} \in \mathbb{Q}              & 7.) -\frac{48}{6} = -8 \in \mathbb{Z} \in \mathbb{Q}                  & 12.) B \in \mathbb{Q} \in \mathbb{R} \\
+    3.) \frac{123}{724} \in \mathbb{Q} \in \mathbb{R}   & 8.) \sqrt{25} = 5 \in \mathbb{N} \in \mathbb{W}                       & 13.) C \in \mathbb{W} \in \mathbb{Z} \\
+    4.) 3.14159 \in \mathbb{Q} \in \mathbb{R}           & 9.) -\sqrt{4} = -2 \in \mathbb{Z} \in \mathbb{Q}                      & 14.) D \in \mathbb{W} \in \mathbb{Z} \\
+    5.) \sqrt{11} \in \mathbb{R}                        & 10.) \sqrt{\frac{63}{7}} = \sqrt{9} = 3 \in \mathbb{N} \in \mathbb{W} & 15.) E \in \mathbb{R}
+    \end{array}
+    \)
+</p>
+</div>
+<script src="AnswerButton.js"></script>
 </body>
 </html>
