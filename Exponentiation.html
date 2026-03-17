@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="mathematics, calculus, algebra, trigonometry, geometry, studying">
+<meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Exponentiation</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<ul>
+    <li><a href="../Home.html" title="Back to Maths Roadmap"><p>Home</p></a></li>
+    <li><a href="Contact Me.html" title="How to contact me"><p>Contact Me!</p></a></li>
+    <li><a href="Silly PDFs.html" title="Some PDFs I made"><p>Silly PDFs</p></a></li>
+    <li><a href="Login.html" title="Make an Account"><p>Login/Sign up</p></a></li>
+</ul>
+<!--- CODE GOES HERE --->
+<h1>Exponentiation</h1>
+<hr>
+<div class="box">
+    <img style="float:right" src="../Images/Exponentiation.png" loading="lazy" alt="">
+    <p style="text-align: center;">
+        Components of exponentiation.
+    </p>
+</div>
+<p>
+    Just like how multiplication is a shorthand way of writing repeated addition, exponentiation is a shorthand of writing repeated multiplication.<br>
+    For example,
+    \(
+    2 \cdot 4 = 2 + 2 + 2 + 2 = 8
+    \)<br>
+    Exponentiation is written with a base and a smaller number in the top right corner of the base number.
+    \(
+    2^4 = 2 \cdot 2 \cdot 2 \cdot 2 = 16
+    \)<br>
+    The number in the superscript is called the <span style="color:red"><u>exponent</u></span>, the number below it is called the
+    <span style="color:red"><u>base</u></span> and the outcome is called the <span style="color:red"><u>power</u></span>.
+    When talking about exponentiation, for example with \(2^4\), we say "two raised to the power of four" or "two to the power of four".
+    The exponent decides how often the multiplication will occur, and the base decides which number will be multiplied repeatedly. <br>
+    For example: \(3^2 = 3\cdot 3,\:\:\:\: 3^3 = 3\cdot3\cdot3,\:\:\:\: 5^5 = 5\cdot5\cdot5\cdot5\cdot5,\:\:\:\: 9^2 = 9\cdot9.\) <br>
+    Numbers raised to the second and third power have special names, that is any number to the power of 2 is that number squared, and to the power 3rd power is that number cubed.
+    Example: \(8^2\) can be referred to as "eight squared", and \(6^3\) can be referred to as "six cubed".
+</p>
+<hr>
+<h1>Properties of exponents</h1>
+<p>
+    The exponent represents how often something gets multiplied, however what meaning does this have when the exponent is 0, or a negative number, or a fraction?
+    First, let's observe some rules on how math with exponents acts in general.
+    Since the exponent counts how many of the bases are multiplied with each other, If we multiply a power with its base it increases the exponent by one. <br>
+    Example: \(2^3 \cdot 2 = (2\cdot2\cdot2)\cdot2 = 2^4\). Notice that 2 can be written as \(2^1\), so when we have two powers with equal bases, and they are multiplied together
+    we can simply add their exponents to get the result. <br>
+    Example 2: \(4^3 \cdot 4^5 = 4^{3+5} = 4^8\). This works in the opposite way just as well. If we divide two powers with equal bases, then we can get the result by
+    subtracting the exponents.
+    Example: \(\frac{7^9}{7^5} = 7^{9-5} = 7^4.\)
+    From these rules we can deduce what powers with negative exponents or an exponent of zero will be.
+</p>
+    <h2>Zero Exponent</h2>
+<p>
+    We can rewrite any number to the 0th power as that number to the power of 1-1, for example, \(2^0 = 2^{1-1}\). From the exponent rules we covered
+    we know that a subtraction in the exponent is equivalent to diving two powers, therefore: \(2^0 = 2^{1-1} = \frac{2^1}{2^1} = \frac{2}{2} = 1\).
+    And notice that this result will be the same for every number, because every number divided by itself gives you one, with the exception of 0, because division by 0
+    is not defined.<br>
+    Example: Find \((-18732.5723953)^0\) <br>
+    Solution: By the rules for exponents, every number to the power of 0, except for 0 itself, is equal to 1. Therefore: \((-18732.5723953)^0 = 1\)
+</p>
+<h2>Negative Exponents</h2>
+    <p>
+        I'm going to present another argument for the fact that any number raised to the 0th power is equal to 1,
+        which flawlessly and naturally leads into a definition for negative exponents. Start with any base that isn't zero, say 2, raised to the third power.
+        If we divide it by 2 many times, we get a table of values for the exponents of 2.
+        \begin{array}{c|c}
+        2^3 & 8\\
+        2^2 & 4\\
+        2^1 & 2\\
+        2^0 & 1\\
+        2^{-1} & \frac{1}{2}\\
+        2^{-2} & \frac{1}{2^2} = \frac{1}{4}\\
+        2^{-3} & \frac{1}{2^3} = \frac{1}{8}
+        \end{array}
+        Notice that this table was calculated by dividing by 2 in each row, which follows the exponent laws and makes sense intuitively,
+        and that this pattern will be identical for any non-zero base. Therefore, we can deduce that for negative exponents,
+        a number raised to a negative exponent is equal to the <span style="color:red"><u>reciprocal</u></span> of that number raised to the positive exponent.
+        A reciprocal of a number is one divided by that number, for example, the reciprocal of three is one third.
+        This means that for negative exponents we can write them as a fraction of positive exponents, which are easy to calculate. <br>
+        Example: Compute \(8^{-2}\)<br>
+        Solution: \(8^{-2} = \frac{1}{8^2} = \frac{1}{64}\)
+        Note: Generally writing your solutions in terms of fractions is just fine, unless it is explicitly specified to carry out the division fully.
+    </p>
+        <h2>Fractional exponents</h2>
+    <p>
+        With the idea of exponentiation being repeated multiplication, what meaning does this have if you have an exponent of one half? Half a multiplication?
+        Once again, like with negative exponents, we can observe how exponentiation acts under these strange conditions and then perhaps draw conclusions about
+        the meaning of fractional exponents.
+        We already know from the sum exponent laws, how powers act under multiplication, but how about exponentiation? <br>For example, if we have \((4^2)^3\) how would we figure this out? <br>
+        Let's just multiply it out and see if we can find some pattern. \((4^2)^3 = (4^2)(4^2)(4^2) = 4^{2+2+2} = 4^{2\cdot3} = 4^6.\) <br>
+        Notice that taking a power to a power is the same as multiplying the power with itself that outer power amount of times, and via the exponent laws
+        that acts like repeated addition, and repeated addition is simply multiplication. So, we have deduced that raising a power to an exponent is equivalent
+        to multiplying the exponents. Now we can start studying fractional exponents. <br>
+    </p>
+    <div class="box">
+        <img style="float:right" src="../Images/Root.png" loading="lazy" alt="">
+        <p style="text-align: center;">
+            Components of root extraction.
+        </p>
+    </div>
+    <p>
+        Let's consider \( 4^{\frac{1}{2}} \). If we square this number we get \( 4^{\frac{1}{2}^2} = 4^{2\cdot\frac{1}{2}} = 4^1\), so we can deduce that the original number is that number,
+        which when it is squared returns 4.<br>
+        This is the definition of a <span style="color:red"><u>square root</u></span>. In this case, our calculation is the square root of two, written as such:
+        \(\sqrt{4}\). In this case, the answer is 2, as 2*2 = 4.
+        This way we can define any root, for example, the 3rd root of an amount gives the number, which when it is cubed returns that amount.
+        It is also called the <span style="color:red"><u>cube root</u></span>.<br>
+        Example: Write \(\sqrt{25}\) as a base raised to an exponent and find the result. <br>
+        Solution: \(\sqrt{25} = 25^{\frac{1}{2}} = (5^2)^{\frac{1}{2}} = 5^{2\cdot\frac{1}{2}} = 5^1\).<br>
+        Example 2: Write \(64^{\frac{1}{3}}\) as a radicand and find the result.<br>
+        Solution: \(64^{\frac{1}{3}} = \sqrt[3]{64} = \sqrt[3]{4^3} = 4\).
+        <br>
+        Lastly, for more complex exponents, calculation by hand, let alone mentally, is implausible,
+        however we can still write them as technically by hand calculable expressions.<br>
+        Example: Express \(7^{\frac{23}{17}}\) as a radical of a power.<br>
+        Solution: \(7^{\frac{23}{17}} = (7^{23})^{\frac{1}{17}} = \sqrt[17]{7^{23}}\) =
+        <a target="_blank" style="display: inline-block;" href="https://www.wolframalpha.com/input?i2d=true&i=Surd%5BPower%5B7%2C23%5D%2C17%5D">\(7^{\frac{23}{17}}\)</a>
+    </p>
+<hr>
+<h1>Exercises</h1>
+<p>
+    Simplify as far as possible.
+</p>
+<div class="latex">
+    \(
+    \begin{array}{l}
+    1.) 3^4         & 6.) \frac{3^4}{3^2}                           & 11.)  \sqrt[3]{8} \\
+    2.) 1^{10}      & 7.) 5^6 \cdot 5^{-3}                          & 12.)  (4^{\frac{1}{3}})^6 \\
+    3.) 5^0         & 8.) 3^0 \cdot \frac{4^{-2}}{4^{-4}}           & 13.)  (2^{3})^2 \\
+    4.) 4^{-2}      & 9.) 8^{\frac{1}{2}} \cdot 8^{-\frac{1}{2}}    & 14.)  (\frac{1}{16})^{-\frac{1}{4}} \\
+    5.) 5^{-3}      & 10.) 6^{-\frac{1}{2}} \cdot 6^{\frac{5}{2}}   & 15.)  \frac{4^{\frac{3}{2}}}{\frac{1}{2^{-3}}}
+    \end{array}
+    \)
+</div>
+<h1>Answers</h1>
+
+<button id="button1" style="background-color: rgb(40, 40, 40)"><p id="button1content">Click to reveal answers</p></button>
+<div class="container">
+    <div class="revealbox" id="answerbutton1"></div><p>
+
+    \(
+    \begin{array}{l}
+    1.) 81              & 6.) 3^{4-2} = 3^2 = 9                                         & 11.)  2 \\
+    2.) 1               & 7.) 5^{6+(-3)} = 5^3 = 125                                    & 12.)  4^{6\cdot\frac{1}{3}} = 4^2 = 16 \\
+    3.) 1               & 8.) 1 \cdot 4^{-2-(-4)} = 4^2 = 16                            & 13.)  (2^{2\cdot3}) =  2^6 = 64\\
+    4.) \frac{1}{16}    & 9.) 8^{\frac{1}{2}+(-\frac{1}{2})} = 8^0 = 1                   & 14.)  (\frac{2^0}{2^4})^{-\frac{1}{4}} = 2^{(-4)(-\frac{1}{4})} = 2^1 = 2 \\
+    5.) \frac{1}{125}   & 10.) 6^{-\frac{1}{2}+\frac{5}{2}} = 6^\frac{4}{2} = 6^2 = 36   & 15.)  \frac{\sqrt{64}}{2^3} = \frac{8}{8} = 1 \\
+    \end{array}
+    \)
+</p>
+</div>
+<script src="AnswerButton.js"></script>
+</body>
+</html>
