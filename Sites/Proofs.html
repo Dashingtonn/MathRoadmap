@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="mathematics, calculus, algebra, trigonometry, geometry, studying">
+<meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" href="../styles.css">
+    <title>Proofs | Appendix</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+</head>
+<body>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<ul>
+    <li><a href="../Home.html" title="Back to Maths Roadmap"><p>Home</p></a></li>
+    <li><a href="Contact Me.html" title="How to contact me"><p>Contact Me!</p></a></li>
+    <li><a href="Silly PDFs.html" title="Some PDFs I made"><p>Silly PDFs</p></a></li>
+    <li><a href="Login.html" title="Make an Account"><p>Login/Sign up</p></a></li>
+</ul>
+<h1>Proofs</h1><hr>
+<p id="SumAnglesTriangles">
+Assuming the knowledge up to where this proof should've been covered.
+</p>
+<hr>
+<h2>Sum of angles in a triangle is 180°</h2>
+<div style="width:400px" class="box">
+    <img style="align:right" src="../Images/OppositeAnglespng.png" loading="lazy" alt="Opposite Angles">
+</div><br>
+<p>
+    From <a href="../Home.html#EleGeo"><span>elementary geometry</span></a> → <a href="Geometry%20of%20Triangles.html"><span>Geometry of triangles</span></a>.
+    Proof outline: Show that the angles in a triangle add up to 180° by showing that the alternate angles of a line falling across two parallel lines
+    are equal.<br>
+    Theorem 1: The vertically opposite angles of two straight-lines which intersect each other are equal.<br>
+    \(Proof:\)
+    Consider one side of a line and the angles it forms with the other line. A full rotation is 360°,
+    and since a line cuts the plane it lies in into two parts, on either side of the line the angle formed by itself
+    is a straight angle, so 180°. Now consider two of these straight angles by both lines.
+    We can split them up into angles \(\alpha_1, \alpha_2, \beta_1\, \beta_2\). Notice that \(\alpha_1 +\beta_1 = 180°\)
+    and \(\alpha_2 + \beta_1 = 180°\), and things equal to something are equal to each other, so
+    \(\alpha_1 +\beta_1 = \alpha_2 + \beta_1\). Notice that we have \(\beta_1\) on both sides, so we can subtract it
+    from both sides of the equation to get \(\alpha_1 = \alpha_2\). Using the same argument we can prove that
+    \(\beta_1 = \beta_2\). \(\square\)<br><br>
+</p>
+<div style="width:400px;" class="box">
+    <img style="align:right" src="../Images/AlternateAngles.png" loading="lazy" alt="Alternate Angles">
+</div>
+<p><br><br>
+    Theorem 2: When a straight line intersects two parallel lines it causes the alternate angles to be equal. <br>
+    \(Proof:\)
+    Let a, b be two parallel lines intersected by the straight line c, and alternate angles
+    \(\alpha_1, \alpha_2, \beta_1, \beta_2\) (see right side), so we're trying to prove that \(\alpha_1 = \alpha_2\).
+    Start by assuming the contrary, that \(\alpha_1 \neq \alpha_2\). Since they're not equal
+    one of them must be larger. Take \(\alpha_1\) to be the larger angle. Since \(\alpha_2 + \beta_2 = 180°\),
+    then \(\alpha_1 + \beta_1 > 180°\) which is impossible, therefore \(\alpha_1\) must be equal to \(\alpha_2\).
+    From here, it is trivial to prove that \(\beta_1 = \beta_2\). \(\square\)
+</p><br><br><br><br><br><br>
+<div style="width:400px;" class="box">
+    <img style="align:right" src="../Images/TriangleSum.png" loading="lazy" alt="Triangle Angle Sum">
+</div>
+<p id="PythagProofSimilar">
+    Theorem 3: The sum of angles in a general triangle is 180°. <br>
+    \(Proof:\)
+    Let a triangle have sides a, b, c and angles \(\alpha, \beta, \gamma\).
+    Construct a line d that is parallel to the base b through B and extend b.
+    The lines a and c intersect the two parallel lines b and d, so their alternate angles are equal.
+    Call the angles at d: \(\alpha_2, \beta, \gamma_2\). So: \(\alpha_2 + \beta + \gamma_2 = 180°\).
+    Furthermore, they are alternate angles, so, due to theorem 2, \(\alpha = \alpha_2, \gamma = \gamma_2\).
+    Therefore, the sum of the angles \(\alpha + \beta + \gamma = 180°\). \(\square\)<br><br><br>
+</p>
+<h2>Proof of the Pythagorean theorem by similarity of triangles</h2><br><br><br><br><br>
+<div style="width:400px;" class="box">
+    <img style="float:right" src="../Images/PythagProofSimilar.png" loading="lazy" alt="proof pythag similar">
+    <p style="text-align: center;">
+        Proof setup
+    </p>
+</div>
+<p>
+    Theorem 4: In a right-angled triangle with legs \(a, b\) and hypotenuse \(c\): \(a^2 + b^2 = c^2\). <br>
+    Proof:
+    The two smaller triangles, one containing \(\beta\) and the other containing \(\alpha\), are similar to the larger triangle
+    because they all have two common angles. From rules of similarity we get:
+    \[
+    \frac{b}{c} = \frac{d}{b} \:\:\:\: \text{and} \:\:\:\: \frac{a}{c} = \frac{e}{a} \\
+    \]
+    Multiplying the left equation by both b and c and the right equation by a and c we get: <br>
+    \[
+    b^2 = cd \:\:\:\: \text{and} \:\:\:\: a^2 = ce \\
+    \]
+    Now if we add \(a^2\) and \(b^2\) together we get: <br>
+    \[
+    a^2 + b^2 = cd + ce \\
+    a^2 + b^2 = c(d+e) \\
+    a^2 + b^2 = c^2 \:\:\:\:\:\:\:\: \square
+    \]
+
+</p>
+<h2 id="cantordiagproof">Cantor's diagonalization proof</h2>
+<p>
+    Theorem 5: The set \( \{x \in \mathbb{R} \mid 0 < x < 1 \} \) is uncountably infinite. <br>
+    Proof: Let's try to find a one-to-one correspondence, and if we can't do so then the set of real numbers between 0 and 1
+    and therefore the set of \(\mathbb{R}\) is uncountably infinite. <br>
+    Match every natural number with a random number between 0 and 1.
+    \[
+    \begin{array}{|c|c|}
+    \hline
+    \mathbb{N} &  \{x \in \mathbb{R} \mid 0 < x < 1 \}  \\
+    \hline
+    1 & 0.853287523876... \\
+    2 & 0.153890271523... \\
+    3 & 0.458327957215... \\
+    4 & 0.999912346789... \\
+    5 & 0.792837465473... \\
+    \cdots & \cdots \\
+    \cdots & \cdots \\
+    \cdots & \cdots \\
+    \end{array}
+    \]
+    This list is infinite so it should have all numbers, however let's construct another number that isn't to be found in this list.
+    Let's do this by changing the first digit of the number in our given list by 1, either +1 if its 0-8 or -1 if its 9.
+    If we do this with our given list we'd get 0.96984... . Notice that this new number we constructed will be
+    different from the first number by the first digit, from the second number by the second digit and so on, meaning that
+    this number we constructed on the interval (0, 1) however nowhere to be found in our list. We can construct
+    infinitely many of these numbers which are nowhere to be found in our list, so this must mean
+    that there are more real numbers between 0 and 1 than the natural numbers. Therefore \( \{x \in \mathbb{R} \mid 0 < x < 1 \} \) and
+    \(\mathbb{R}\) is uncountably infinite. \(\square\)
+
+
+</p>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+</body>
+</html>
