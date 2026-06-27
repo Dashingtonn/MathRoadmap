@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <head>
     <link rel="stylesheet" href="../styles.css">
-    <title>TITLE TITLE</title>
+    <title>3D Geometry</title>
     <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
 </head>
 <body>
@@ -16,13 +16,152 @@
     <li><a href="Silly PDFs.html" title="Some PDFs I made"><p>Silly PDFs</p></a></li>
     <li><a href="Login.html" title="Make an Account"><p>Login/Sign up</p></a></li>
 </ul>
-<h1>TITLE</h1><hr>
+<h1>3D Geometry</h1><hr>
 <!--- CODE GOES HERE --->
-
+<div class="box">
+    <img style="float:right" src="../Images/CubeNRect.png" loading="lazy" alt="Cube and Rectangle">
+    <p style="text-align: center;">
+        Cube and Rectangle
+    </p>
+</div>
 <p>
+    The number line represents 1D space. The xy-plane represents 2D space.
+    Add one more number line in the z direction to get 3D space. In this space we have three coordinates:
+    (x | y | z), with their respective x-, y- and z-axis. On top of length and width we also have height,
+    combining the three to get volume. The formulas for the volume of a cube and rectangular prism extend simply
+    into three dimensions: For a cube of side length s its volume <span style="color:red"><u>\(V = s^3\)</u></span>.
+    For a rectangular prism with length \(\ell\), width w and height h it's volume <span style="color:red"><u>\(V = \ell \cdot w \cdot h\)</u></span>.<br>
+    Example: A cube with a side length of 4cm is connected to a rectangular prism with a length of 10cm, width
+    of 5cm and height equal to that of the cube. Find the volume of the entire shape. <br>
+    Solution: The volume of the cube is: \(V_C = (4cm)^3 = 64cm^3\). The rectangular prism has a height of 4cm, so
+    its volume is: \(V_R = 10cm\cdot 5cm\cdot 4cm = 200cm^3\). Finally, adding these two up we get the volume
+    of the whole shape: \(V = V_C + V_R = 200cm^3 + 64cm^3 = 264cm^3\). <br>
+    From 2D to 3D area turns into volume, and perimeter turns into surface area. To compute the surface area simply
+    find the area of each side of a shape and then add them up. Since the area of a side of a cube with sidelength
+    s is \(s^2\), and a cube has six sides then the surface area of a cube is: <span style="color:red"><u>\(S = 6s^2\)</u></span>.
+    Same with a rectangular prism, except it has 2 sides each which are the same, 3 diffent pairs of sides,
+    so the formula for it is: <span style="color:red"><u>\(S = 2(\ell\cdot w + \ell\cdot h + w\cdot h)\)</u></span>.
+    Circles have two main ways of extending to three dimensions: Spheres and cylinders, for which we also have formulas for their volume
+    and surface area. The volume of a cylinder is the area of its base times the height of the cylinder, so
+    <span style="color:red"><u>\(V = \pi r^2h\)</u></span>.
+    The surface area of a cylinder is simply the area of its top and bottom face and
+    the surface area of its sheath/covering/lateral surface. The perimeter for its lateral surface is \(2\pi r\), so when we multiply it with the height
+    of the cylinder, and add the top and bottom face, we get that the surface area of a cylinder is:
+    <span style="color:red"><u>\(S = 2\pi rh + 2\pi r^2\)</u></span>.<br></p>
+<div class="box">
+    <img style="float:right" src="../Images/SurfaceAreaSphere.png" loading="lazy" alt="surface area sphere">
+    <p style="text-align: center;">
+        Intuition for the surface area of a sphere.
+    </p>
+</div>
+<p>
+    Example 2: Find the volume of a cylinder of height 40mm and diameter 14mm. <br>
+    Solution: The radius is 7mm, so the volume is \(V = \pi (7mm)^2 \cdot 40mm = 1960\pi \: mm^3 = 1.96\pi \: cm^3\).<br>
+    Example 3: A can of coke can be modelled by a cylinder of height 15cm and diameter 8cm. Find its surface area in dm. <br>
+    Solution: \(S = 2\pi (4cm)(15cm) + 2\pi (4cm)^2 = 120\pi cm^2 + 32\pi \: cm^2 = 152\pi \: cm^2 = 1.52\pi dm^2 \approx 4.78dm^2\).<br>
+    From here on we will encounter formulae that I won't prove for a while until we get to higher tiers
+    so you will just have to take my word for them. Still, I can give you an intuitive reason for the formula
+    of the surface area of a sphere. Stretch the "tips" of a sphere out to form it into a cylinder. Then, we'd have a
+    cylinder with height of the diameter of the sphere and radius of the radius of the sphere. Therefore, the
+    surface area of a sphere is the same as the surface area of the lateral surface of this cylinder, which is \(2\pi r \cdot 2r\). So,
+    the surface area for a sphere is <span style="color:red"><u>\(S = 4\pi r^2\)</u></span>.
+    The formula for the volume of a sphere is: <span style="color:red"><u>\(V = \frac{4}{3}\pi r^3\)</u></span>.<br>
+    Example 4: Find the surface area and volume of a sphere with radius of 1m. Convert your answers to dm. <br>
+    Solution: \(S = 4\pi (1m)^2 = 4\pi m^2 = 400\pi dm^2\). \(V = \frac{4}{3}\pi (1m)^3 = \frac{4\pi}{3}m^3 = \frac{4000\pi}{3}dm^3\).<br></p><br><br>
+<div class="box">
+    <img style="float:right" src="../Images/PyramidVolume.png" loading="lazy" alt="Pyramid Volume Visualization">
+    <p style="text-align: center;">
+        Visual proof for the volume of a pyramid
+    </p>
+</div>
+<p>
+    Last two shapes we're going to investigate are pyramids and cones. <br>
+    Regular pyramids are pyramids with a regular shape as a base and their height located above the crossing point of the
+    diagonals of the base/the center of the base. We will only be looking at pyramids with a rectangular base, so rectangular pyramids.
+    The defining sizes of a rectangular pyramid are: \(\ell\), the length of the base rectangle, w, the width of the base rectangle, h, the height of the apex of the pyramid,
+    l, the slant length, so the length along the bent triangles coming towards the apex, V, the volume and S, the surface area.
+    The volume of a pyramid is one third of the rectangle with base and height the same as the pyramid, so
+    <span style="color:red"><u>\(V = \frac{1}{3} B \cdot h\)</u></span>.
+    The base is simple to calculate, since it is simply a rectangle. For a square rectangle the slant lengths are the same for all the sides,
+    for a rectangular pyramid there are two slant lengths, which can each be figured out using the Pythagorean theorem.
+    Then, the surface area of a rectangular pyramid is the base + the surface of each of the upwards-facing sides, which are
+    triangles, so their respective slant length l, times their base b over 2.
+    <span style="color:red"><u>\(S = \ell \cdot w + \ell \cdot l_1 + w\cdot l_2\)</u></span>.<br>
+    A square pyramid is a special case of the rectangular pyramid where the length is the same length as the width.<br>
+    Example 5: The Great Pyramid of Giza can be modelled as a square pyramid with a base of sidelength 230m and a height of 139m.
+    Find the volume as well as the surface area of the pyramid. <br>
+    Solution: \(V = \frac{1}{3} (230m)^2 \cdot 139m \approx 2451033.33m^3 = 2.45 \cdot 10^6 m^3.\) <br>
+    The slant length is the same for every side, which can be calculated as <span style="color:red"><u>\(l^2 = h^2 + (\frac{s}{2})^2\)</u></span>,
+    which in our case is \(l^2 = (139m)^2 + (\frac{230m}{2})^2 = 32546m^2 \to l \approx 180.4m\). The
+    surface area for a square pyramid <span style="color:red"><u>\(S = s^2 + 2\cdot l\cdot s\)</u></span>, so
+    \(S = (230m)^2 + 2\cdot 230m \cdot 180.4m = 135884m^2 = 135.88 \cdot 10^3 m^2\). <br>
+    </p>
+<div class="box">
+    <img style="float:right" src="../Images/ConeSector.png" loading="lazy" alt="Cone Sector">
+    <p style="text-align: center;">
+        Surface area of a cone
+    </p>
+</div>
+<p>
+    For a cone, the volume is one third the volume of a cylinder of the same radius and height, so
+    <span style="color:red"><u>\(V = \frac{1}{3}\pi r^2 h\)</u></span>. The surface area of a cone is equal to the
+    circular base plus the lateral surface. If we unroll the lateral surface then it's a circle sector with
+    and arc of 2\(\pi r\), since that's the perimeter of the base of our cone, and a radius of \(l\), therefore our
+    angle is \(\theta = \frac{2\pi r}{l}\) so then the area of the sector is equal to the
+    lateral surface area of the cone: \(S_{LAT} = \frac{1}{2}(l)^2 \cdot \frac{2\pi r}{l} = \pi r l\), so
+    we finlly get the surface area of a cone: <span style="color:red"><u>\(S = \pi r^2 + \pi r l\)</u></span>.<br>
+    \[
+    Table \:\: of \:\: formulae\\
+    \begin{array}{|c|c|}
+    \hline
+    Volume & Surface \:\: Area \\
+    \hline
+    V_{Cub} = s^3 & S_{Cub} = 6s^2  \\
+    V_{Rec} = \ell \cdot w \cdot h & S_{Rec} = 2(\ell \cdot w + \ell \cdot h + w \cdot h) \\
+    V_{Cyl} = \pi r^2 h & S_{Cyl} = 2\pi r(h + r) \\
+    V_{Sph} = \frac{4}{3}\pi r^3 & S_{Sph} = 4\pi r^2 \\
+    V_{Pyr} = \frac{1}{3}B\cdot h & S_{Pyr} = \ell \cdot w + \ell + l_1 + w \cdot l_2 \\
+    V_{Con} = \frac{1}{3}\pi r^2 h & S_{Con} = \pi r(r + l) \\
+    \hline
+    \end{array}
+    \]
+    You should know the first four formulae from this table, while for the pyramid and cone remember that the volume is
+    simply one third of the base and height, where for the cone the base is a circle.
+    The more you work with this the more integrated the formulae will be in your mind, so most crucially understand why
+    these formulae are the way they are and how to derive them. Also note that, obviously, this table doesn't list the formulae
+    for 2D shapes.
+</p>
+<hr>
+<h1>Exercises</h1>
+<div class="latex">
+    1-10.) Find the volume and surface area of the shape:<br>
+    1.) Cube of side length 3m. <br>
+    2.) Rectangle with length 20cm, width 80mm, height 16cm. <br>
+    3.) Cylinder with a height of 4dm, diameter 2dm. <br>
+    4.) Sphere with a diameter of 28mm. <br>
+    5.) Square pyramid with height 5m and sidelength of 3m. <br>
+    6.) Cone of height 30cm, diameter 16cm. <br>
+    7.) Cube of sidelength \(\sqrt[3]{3}\). <br>
+    8.) Sphere with radius \( \frac{\sqrt{\pi}}{2\pi} m \approx 28.21cm\). <br>
+    9.) Rectangle with length, width and height of 1m. <br>
+    10.) Cylinder of height 50cm, diameter 50dm. <br>
+    11.) For a rectangular pyramid of side lengths \(a\) and \(b\) find a formula for the slant length on \(a\): \(l_a\) and
+    the one on \(b\) : \(l_b\). Then verify the formula given in this section for the surface area of a rectangular pyramid
+    and find the surface area of a rectangular pyramid of height 10m, length 8m and width 5m. <br>
+    12.) The LBS Financial Credit Union Pyramid, formerly known as the Walter Pyramid, is a square pyramidal
+    indoor arena/court on the California State University Campus which hosts men's and women's basketball and volleyball
+    games. It has a sidelength of 345 feet and a height of 190 feet. Find its surface area. <br>
+    13.) The pyramid of Djoser is a step pyramid in Saqqara, Egypt and is the first Egyptian pyramid ever to be built.
+    Assuming it's a perfect rectangular pyramid with a base of 109m \(\times\) 121m and a height of 62.5m what was its
+    volume and surface area (not counting the surface area in contact with the floor).
+</div>
+<h1>Answers</h1>
+<button id="button1" style="background-color: rgb(40, 40, 40)"><p id="button1content">Click to reveal answers</p></button>
+<div class="container">
+    <div class="revealbox" id="answerbutton1"></div><p>
 
 </p>
-
-
+</div>
+<script src="AnswerButton.js"></script>
 </body>
 </html>

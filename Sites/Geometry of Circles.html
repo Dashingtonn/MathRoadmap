@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <head>
     <link rel="stylesheet" href="../styles.css">
-    <title>TITLE TITLE</title>
+    <title>Geometry of a Circle</title>
     <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
 </head>
 <body>
@@ -16,13 +16,95 @@
     <li><a href="Silly PDFs.html" title="Some PDFs I made"><p>Silly PDFs</p></a></li>
     <li><a href="Login.html" title="Make an Account"><p>Login/Sign up</p></a></li>
 </ul>
-<h1>TITLE</h1><hr>
+<h1>Geometry of a Circle</h1><hr>
 <!--- CODE GOES HERE --->
-
+<div class="box">
+    <img style="float:right" src="../Images/Circle%20Linesjpg.jpg" loading="lazy" alt="Various lines of a circle">
+    <p style="text-align: center;">
+        Types of lines that a circle has.
+    </p>
+</div>
 <p>
-
+    As described previously, a circle is a shape with a circumference and an origin, such that every straight line from the origin
+    to the circumference has the same length. This line is also called the radius. A line which has its endpoints on the circumference
+    of a circle and which passes through the center of the circle is called the diameter, and the diameter is twice the size of the radius.
+    Other lines which terminate on the circumference but don't go through the origin are called chords. Infinite lines which intersect
+    the circle twice are called secant lines and infinite lines which only intersect the circle at one point on its circumference are called
+    tangent lines. On the right you see a diagram showcasing all of these types of lines.<br>
+    Just like with the previous quadrilateral figures we studied, we also want to find the circumference and area of this circle, however
+    that seems like quite the impossible task. How are we supposed to figure out how many of the unit squares fit into a circle?
+    It turns out that there is a special constant that comes from circles. No matter how large or small a circle is, there is a
+    special quantity that is the same for all of them, that is the circumference C divided by the diameter d, so \(\frac{C}{d}\).
+    This ratio is the same for all circles, so we gave it a greek letter, "pi", which has this value:
+    \(\pi = \frac{C}{d} = 3.1415926535...\) . Pi is a real number, because it can't be written as a fraction; it is irrational.
+    Therefore, by definition, the circumference C of a circle with diameter d is: \(C = \pi d\). When working with circles, we rarely
+    work with the diameter, instead the radius, so we write all of our formulae using the radius. The diameter is twice the radius so:
+    <span style="color:red"><u>\(C = 2\pi r\)</u></span>.<br>
+    Example: A circle has a radius of 5cm. Find the circumference of the circle. <br>
+    Solution: \(C = 2\pi(5cm) = 10\pi cm \approx 31.42cm\). <br>
+    If you want exact solutions you will have to write your answer in terms of a multiple of pi (which is fine in most cases), otherwise,
+    if you want an approximate answer, round to two decimal places. <br>
+    As for the area of a circle, we will prove the formula for it using the method of exhaustion. <br>
 </p>
-
-
+    <h2>The Area of a Circle</h2>
+<div class="box">
+    <img style="float:right" src="../Images/Circle%20Area.png" loading="lazy" alt="Area of circle via exhaustion">
+    <p style="text-align: center;">
+        Formula for the Area of a Circle via method of exhaustion
+    </p>
+</div>
+<p>
+    Cut up a circle into, say, 8 sectors, line half of them up with their tip facing down and half of them facing up to form a shape that is close to a rectangle.
+    Obviously, this shape isn't exactly a rectangle, but it is approximately. To make this approximation more accurate we must cut up the circle into more parts.
+    The more and more cuts we make the more it becomes a rectangle with a length of half the circumference and a height of the radius, so just by rearranging the circle
+    we've turned it into rectangle whose area we can find easily. Since the length is half the circumference it's \(\ell = \pi r\), while the width is simply r.
+    Therefore, the area of the rectangle which is also the area of the circle is <span style="color:red"><u>\(A = \pi r^2\)</u></span>.<br>
+    Example 2: Find the area of a circle of radius 3mm. <br>
+    Solution: \(A = \pi \cdot (3mm)^2 = 9\pi \: mm^2\). <br>
+    Example 3: Find the area and circumference of a circle of radius 5dm. Write your answer in m/\(m^2\) as a multiple of pi as well as an approximation. <br>
+    Solution: \(A = \pi (5dm)^2 = 25\pi \: dm^2 = 25\pi \: dm^2 = 25\pi \: (10^{-1} m)^2 = 0.25\pi \: m^2 \approx 0.7854 m^2\). <br>
+    \(P = 2\pi \: (5dm) = 10\pi \: dm = \pi \: m \approx 3.14 m\).
+    We might also want to find the area of a half or quarter circle, or any general sector of a circle.
+    The expression: \(\frac{\theta}{360°}\), where the letter in the numerator is the greek letter "theta", gives you a
+    section of a circle, so for 180°, that expression would come out to 1/2, meaning that half a rotation gives you half a circle.
+    Therefore, <span style="color:red">\(A = \frac{\theta}{360°}\pi r^2\)</span> gives you the area for a circle sector of an angle theta. <br>
+    Example 4: Find the area of a half circle with radius 2m. <br>
+    Solution: Half a rotation is 180°, therefore \(A = \frac{180°}{360°} \pi (2m)^2 = \frac{1}{2}\pi \: 4m^2 = 2\pi \: m^2\). <br>
+    Example 5: Find the area of a quarter circle with radius of 45mm. Write it in square centimeters. <br>
+    Solution: A quarter rotation is 90°, so \(A = \frac{90°}{360°} \pi (45mm)^2 = \frac{1}{4} 2025 \pi \: mm^2 = 506.25 \pi \: mm^2 = 5.06\pi \: cm^2 \approx 15.9 cm^2\).
+</p>
+<span style="color:red"><u></u></span>
+<hr>
+<h1>Exercises</h1>
+<div class="latex">
+    Write all your answers in engineering notation <br>
+    1-7.) Find all other dimensions of a circle (radius, diameter, circumference, area) for a circle with the given dimensions. <br>
+    8-10.) Find the area of the sector. <br>
+    \(
+    \begin{array}{l}
+    1.) r = 5cm                 & 6.) r = \pi m \\
+    2.) d = 5cm                 & 7.) r = \frac{1}{\pi} \mu m  \\
+    3.) r = 80m                 & 8.) r = 3cm, \theta = 180°\\
+    4.) d = 1m                  & 9.) r = 0.5m, \theta = 45°\\
+    5.) r = 1m                  & 10.) d = 24dm, \theta = 30°\\
+    \end{array}
+    \)
+</div>
+<h1>Answers</h1>
+<button id="button1" style="background-color: rgb(40, 40, 40)"><p id="button1content">Click to reveal answers</p></button>
+<div class="container">
+    <div class="revealbox" id="answerbutton1"></div><p>
+    \(
+    \begin{array}{l}
+    1.) d = 10cm, C = 20\pi cm, A = 25\pi cm^2      & 6.) d = 2\pi m, C = 2\pi^2 m, A = \pi^3 m^2\\
+    2.) r = 2.5cm, C = 5\pi cm, A = 6.25\pi cm^2    & 7.) d = \frac{2}{\pi}\mu m, C = 2\mu m, A = \frac{1}{\pi}\mu m^2 \\
+    3.) d = 160m, C = 160\pi m, A = 6400\pi m^2     & 8.) A = \frac{9\pi}{2} m^2 \\
+    4.) r = 0.5m, C = \pi m, A = 0.25\pi m^2        & 9.) A = 0.0625\pi m^2 = 62.5\pi cm^2\\
+    5.) d = 2m, C = 2\pi m, A = \pi m^2             & 10.) A = 12\pi dm^2
+    \end{array}
+    \)
+</p>
+</div>
+<script src="AnswerButton.js"></script>
 </body>
 </html>
